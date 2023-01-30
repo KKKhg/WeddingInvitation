@@ -1,16 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import zippo from './assets/images/zippo.jpeg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload
-        </p>
-      </header>
-    </div>
+    <div>
+        자기 언능 와용
+        <img src={zippo} width="100%" />
+    </div> 
   );
 }
 
