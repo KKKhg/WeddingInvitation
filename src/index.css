@@ -4,9 +4,10 @@
     }
     #root {
         width: 576px;
-        background-color: #fff;
+        background-color: #FFFACD;
         margin: auto;
         min-height: 100vh;
+        overflow: auto;
     }
 }
 
