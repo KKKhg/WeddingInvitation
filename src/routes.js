@@ -13,5 +13,5 @@ export const router = createBrowserRouter([
         element: <Sample />
     }
 ], {
-    basename: '/WeddingInvitation'
+    basename: `${process.env.PUBLIC_URL}`
 })
