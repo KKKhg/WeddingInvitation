@@ -12,4 +12,6 @@ export const router = createBrowserRouter([
         path: "/sample",
         element: <Sample />
     }
-])
+], {
+    basename: '/WeddingInvitation'
+})
