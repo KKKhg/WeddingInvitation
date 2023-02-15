@@ -1,9 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Sample from "./pages/Sample";
 
 
-export const router = createBrowserRouter([
+// export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/",
         element: <Home />
@@ -12,6 +13,4 @@ export const router = createBrowserRouter([
         path: "/sample",
         element: <Sample />
     }
-], {
-    basename: `${process.env.PUBLIC_URL}`
-})
+])
