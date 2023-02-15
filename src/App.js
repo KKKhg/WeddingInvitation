@@ -1,14 +1,19 @@
-import './App.css';
+import { useEffect } from "react";
+import { RouterProvider } from "react-router-dom";
 import { visitorCheck } from "./network";
+import { router } from "./routes";
+
+
+
 
 function App() {
-    visitorCheck();
-    return (
-        <div className="wrapper">
-            Test
-            <img src={require('./assets/images/zippo.jpeg')} width="100%" alt="zippo"/>
-        </div> 
-    );
+    useEffect(() => {
+        visitorCheck();
+    }, []);
+    return  (
+        <RouterProvider router={router} />
+    )
+    
 }
 
 export default App;
