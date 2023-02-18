@@ -14,7 +14,7 @@ const Timer = () => {
         return () => {
             clearInterval(interval);
         }
-    }, []);
+    }, [remainDttm]);
     
     function countRemainTime() {
         const now = new Date().getTime();
