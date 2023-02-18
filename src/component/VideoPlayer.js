@@ -4,14 +4,28 @@ import './VideoPlayer.css';
 
 const VideoPlayer = () => {
     return (
+        <div className="video_wrapper">
+            <video className="video"  
+                autoPlay={true}
+                muted={true}
+                controls={false}
+                loop={true}
+                playsInline={true}
+            >
+                <source src={`${process.env.PUBLIC_URL}/videos/weddingVideo.mp4`} type="video/mp4" />
+            </video>
+            
             <ReactPlayer 
                     url={`${process.env.PUBLIC_URL}/videos/weddingVideo.mp4`}
                     playing={true}
+                    playsinline={true}
+                    pre
                     loop={true}
                     volume={0}
                     width='100%'
                     height='100%'
             />  
+        </div>    
     )
 };
 
