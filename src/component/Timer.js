@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import { intl_ko } from "../constants";
 import { pad } from "../utils/StringUtils";
 import './Timer.css';
 
 const Timer = () => {
     const d_day = new Date('2023-06-25 13:50:00').getTime();
     const [remainDttm, setRemainDttm] = useState();
-    const [sec, setSec] = useState();
     
     useEffect(() => {
         countRemainTime();
@@ -16,15 +14,14 @@ const Timer = () => {
         return () => {
             clearInterval(interval);
         }
-    }, [])
+    }, []);
     
     function countRemainTime() {
         const now = new Date().getTime();
         const remainTime = d_day - now;
         const _remainTime = convert(remainTime);
         setRemainDttm(`${_remainTime.d}일 ${_remainTime.h}시간 ${_remainTime.m}분 ${_remainTime.s}초`)
-        setSec(_remainTime.s);
-    }
+    };
     
     function convert(timeStamp) {
         const day = Math.floor(timeStamp/(1000*60*60*24));
