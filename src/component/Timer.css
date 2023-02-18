@@ -1,6 +1,7 @@
 .timer_wrapper {
     margin: 3vh auto;
     padding: 1vh 0;
-    width: 85vw;
+    width: 85%;
     border: 1px solid #000;
+    text-align: center;
 }

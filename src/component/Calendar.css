@@ -1,0 +1,46 @@
+.calendar_wrapper {
+    margin: 2vh auto;
+    width: 80%;
+    min-height: 30vh;
+    
+}
+
+.subject_wrapper {
+    width: 100%;
+    padding-bottom: 2vh;   
+    border-bottom: 1px dashed #00000080;
+}
+.subject_date {
+    font-size: 1.4rem;
+    margin-bottom: 2vh;
+}
+.subject_time {
+    font-size: 1.2rem;
+}
+
+.calendar {
+    padding-top: 2vh;
+    font-weight: bold;
+}
+.calendar span {
+    width: 14.2%;
+}
+.calendar_row_wrap {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3rem;
+    height: 3rem;
+}
+.calendar_day {
+    font-size: 1rem;
+}
+.calendar_date {
+    font-size: 1.1rem;
+}
+
+.d_day_ {
+    border-radius: 2rem;
+    color: #fff;
+    background-color: #00000070;
+    overflow: visible;
+}
