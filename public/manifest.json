@@ -1,8 +1,6 @@
 {
   "short_name": "WeddingInvitation",
   "name": "현구💕유진 결혼합니다.",
-  "icons": [
-  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

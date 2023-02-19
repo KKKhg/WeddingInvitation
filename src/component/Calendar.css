@@ -1,26 +1,26 @@
-.calendar_wrapper {
-    margin: 2vh auto;
-    width: 80%;
-    min-height: 30vh;
-    
+.whole_wrapper{
+    position: relative;
+    margin-bottom: 7%;
+}
+.border_img {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.subject_wrapper {
-    width: 100%;
-    padding-bottom: 2vh;   
-    border-bottom: 1px dashed #00000080;
-}
-.subject_date {
-    font-size: 1.4rem;
-    margin-bottom: 2vh;
-}
-.subject_time {
-    font-size: 1.2rem;
+.calendar_wrapper {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+    width: 70%;
 }
 
 .calendar {
-    padding-top: 2vh;
+    padding-top: 2%;
 }
+
 .calendar span {
     width: 14.2%;
 }
@@ -31,16 +31,23 @@
     height: 3rem;
 }
 .calendar_day {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 .calendar_date {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+}
+.calendar_sat {
+    color: #0099ff;
+}
+.calendar_sun {
+    color: #ff4d4d;
 }
 
 .d_day_ {
-    border-radius: 2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
     color: #fff;
-    background-color: #00000070;
+    background-color: #DB7093;
     overflow: visible;
 }
