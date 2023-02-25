@@ -1,6 +1,5 @@
 .wrapper {
-    min-height: 95vh;
+    min-height: 100%;
     background-color: #FFFACD80;
     background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
-    padding-bottom: 5vh;
 }

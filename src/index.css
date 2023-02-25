@@ -1,3 +1,5 @@
+@import url('assets/fonts/fonts.css');
+
 @media (min-width: 768px) {
     body {
         background-color: #fff76750;
@@ -12,7 +14,7 @@
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
 }
 
 #root {
