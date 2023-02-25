@@ -1,0 +1,10 @@
+.adress_wrap {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 100%;
+    min-height: 30vh;
+}
+
+.adress_text_wrap {
+    text-align: left !important;
+}

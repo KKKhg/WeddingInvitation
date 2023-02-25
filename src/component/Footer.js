@@ -12,8 +12,8 @@ const Footer = () => {
     }
     
     return (
-        <>
-            <div className="footer_wrap">Copyright KHG</div>
+        <div className="footer_wrap">
+            <span>Copyright KHG</span>
             <div className="fix_button">
                 <Button variant="contained"
                 startIcon={<RiKakaoTalkFill />}
@@ -24,7 +24,7 @@ const Footer = () => {
                 onClick={sendKakaoLink}
                 >공유하기</Button>
             </div>
-        </>
+        </div>
     )
 };
 

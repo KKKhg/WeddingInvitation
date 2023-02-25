@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import React, { useState } from 'react';
+import Address from "../component/adress/Address";
 import Calendar from "../component/Calendar";
 import Footer from "../component/Footer";
 import Gallery from "../component/Gallery";
@@ -24,7 +25,8 @@ const Home = () => {
                 <Timer />
             </>
             <BasicPortalModal modalOpen={modal} closeCallback={() => setModal(false)}>children</BasicPortalModal>
-            <Button onClick={modalOpen}>openn</Button>
+            {/* <Button onClick={modalOpen}>openn</Button> */}
+            <Address />
             <Footer />
         </div> 
     );

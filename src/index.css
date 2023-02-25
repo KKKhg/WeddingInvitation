@@ -20,6 +20,9 @@ html, body {
 #root {
     min-height: 100%;
 }
+#root > div {
+    margin-bottom: 5vh;
+}
 
 * {
     margin: 0 auto;

@@ -4,7 +4,7 @@ import './Calendar.css';
 const Calendar = () => {
     
     return (
-        <div className="whole_wrapper">
+        <div className="calendar_whole_wrapper">
             <img className="border_img"
                src={require(`../assets/images/calendar_border.png`)}
             />
