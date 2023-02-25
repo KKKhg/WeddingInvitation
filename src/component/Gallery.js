@@ -1,53 +1,50 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Gallery.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import ImageGallery from 'react-image-gallery';
 
 
-const images = [
+
+let images = [
     {
-        src: require('../assets/images/weddingPicture/1.jpg'),
+        original: require('../assets/images/weddingPicture/1.jpg'),
     },
     {
-        src: require('../assets/images/weddingPicture/2.jpg'),
+        original: require('../assets/images/weddingPicture/2.jpg'),
     },
     {
-        src: require('../assets/images/weddingPicture/3.jpg'),
+        original: require('../assets/images/weddingPicture/3.jpg'),
     },
     {
-        src: require('../assets/images/weddingPicture/4.jpg'),
+        original: require('../assets/images/weddingPicture/4.jpg'),
     },
     {
-        src: require('../assets/images/weddingPicture/5.jpg'),
+        original: require('../assets/images/weddingPicture/5.jpg'),
     },
     {
-        src: require('../assets/images/weddingPicture/6.jpg'),
+        original: require('../assets/images/weddingPicture/6.jpg'),
     }
 ];
 
+
 const Gallery = () => {
+    useEffect(() => {
+        const ratio = 1.5;
+    
+        images.forEach((el, idx) => {
+            el.originalWidth = Number(window.innerWidth * 0.9);
+            el.originalHeight = el.originalWidth * ratio;
+            el.loading = 'lazy';
+        })
+    }, [])
+    
     return (
         <div className="gallery_wrapper">
-            <Carousel
-                infiniteLoop={true}
-                showStatus={false}
-                showThumbs={false}
-                showArrows={false}
-                transitionTime={0}	
-                autoPlay={false}
-            >
-                {
-                    images.map((el, idx) => {
-                        return (
-                            <div className="slider_wrap">
-                                <img className="slider_img" 
-                                    src={el.src}
-                                />
-                            </div>
-                        )
-                    })
-                }
-            </Carousel>
+            <ImageGallery items={images}
+                    showBullets={true}
+                    show nav={false}
+                    showFullscreenButton={false}
+                    showPlayButton={false}
+            />
         </div>
     )
 };

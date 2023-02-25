@@ -1,14 +1,7 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 .gallery_wrapper {
     margin: 10% auto;
-    width: 90%;   
+    width: 95%;   
     border: 0;
 }
-.slider_wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}  
-.slider_img {
-    width: 99% !important;
-}
-
