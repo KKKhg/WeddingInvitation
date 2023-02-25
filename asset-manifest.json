@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeddingInvitation/static/css/main.bd23bcc7.css",
-    "main.js": "/WeddingInvitation/static/js/main.718cf003.js",
+    "main.css": "/WeddingInvitation/static/css/main.f2c8a4c5.css",
+    "main.js": "/WeddingInvitation/static/js/main.6f4d14a6.js",
     "static/js/787.c1112931.chunk.js": "/WeddingInvitation/static/js/787.c1112931.chunk.js",
     "static/media/6.jpg": "/WeddingInvitation/static/media/6.a5ae265eca5c0546a01d.jpg",
     "static/media/main_img.jpg": "/WeddingInvitation/static/media/main_img.ad20c67c3bd385cab2a8.jpg",
@@ -11,13 +11,14 @@
     "static/media/1.jpg": "/WeddingInvitation/static/media/1.0629d43d9dcf36beb1d6.jpg",
     "static/media/2.jpg": "/WeddingInvitation/static/media/2.ffd46bb8746292c1626e.jpg",
     "static/media/calendar_border.png": "/WeddingInvitation/static/media/calendar_border.18cd172d507285e78af5.png",
+    "static/media/KakaoBold.woff2": "/WeddingInvitation/static/media/KakaoBold.02be61b74c5e6d5337ea.woff2",
     "index.html": "/WeddingInvitation/index.html",
-    "main.bd23bcc7.css.map": "/WeddingInvitation/static/css/main.bd23bcc7.css.map",
-    "main.718cf003.js.map": "/WeddingInvitation/static/js/main.718cf003.js.map",
+    "main.f2c8a4c5.css.map": "/WeddingInvitation/static/css/main.f2c8a4c5.css.map",
+    "main.6f4d14a6.js.map": "/WeddingInvitation/static/js/main.6f4d14a6.js.map",
     "787.c1112931.chunk.js.map": "/WeddingInvitation/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd23bcc7.css",
-    "static/js/main.718cf003.js"
+    "static/css/main.f2c8a4c5.css",
+    "static/js/main.6f4d14a6.js"
   ]
 }
