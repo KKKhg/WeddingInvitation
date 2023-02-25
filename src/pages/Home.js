@@ -15,7 +15,7 @@ const Home = () => {
     const modalOpen = () => setModal(true);
     
     return (
-        <div className="wrapper">
+        <div className="wrapper" id="wrapper">
             {/* <VideoPlayer /> */}
             <MainImg />
             <Gallery />
