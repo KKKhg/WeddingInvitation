@@ -1,6 +1,7 @@
 import React from 'react';
 import './Gallery.css';
 import ImageGallery from 'react-image-gallery';
+import isMobile from "../utils/isMobile";
 
 
 
@@ -30,7 +31,7 @@ const Gallery = () => {
     
     const img = new Image();
     img.src = images[0].original;
-    const ratio = 1.5;
+    const ratio = isMobile() ? 1.45 : 0.5;
     
     const standard_width = window.innerWidth;
     const standard_height = standard_width * ratio;

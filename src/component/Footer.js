@@ -5,8 +5,6 @@ import './Footer.css';
 
 const Footer = () => {
    
-
-    
     function sendKakaoLink() {
         window.Kakao.Share.sendCustom({
             templateId: 90482,
