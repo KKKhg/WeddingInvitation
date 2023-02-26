@@ -52,8 +52,6 @@ const Map = () => {
         window.open(url, '_blank');
     }
     
-    
-    
     return (
         <div className="map_wrapper">
             <div>
@@ -61,26 +59,25 @@ const Map = () => {
                 </div>
             </div>
             <div className="map_btn_wrapper">
-                
+                <div className="map_btn_wrap">
+                    <Button onClick={kakaoMapLinkTo}>
+                        <img className="map_icon" src={require('../../assets/images/kakao_map.png')}/>
+                    </Button>
+                    <div>카카오</div>
+                </div>
+                <div>
+                    <Button onClick={naverMapLinkTo}>
+                        <img className="map_icon" src={require('../../assets/images/naver_map.png')}/>
+                    </Button>
+                    <div>네이버</div>
+                </div>
+                <div>
+                    <Button onClick={tMapLinkTo}>
+                        <img className="map_icon" src={require('../../assets/images/t_map.png')}/>
+                    </Button>
+                    <div>티 맵</div>
+                </div>
             </div>
-            <Button variant="contained"
-                startIcon={<img className="map_icon" src={require('../../assets/images/kakao_map.png')}/>}
-                onClick={kakaoMapLinkTo}
-            >
-                길찾기
-            </Button>
-            <Button variant="contained"
-                startIcon={<img className="map_icon" src={require('../../assets/images/naver_map.png')}/>}
-                onClick={naverMapLinkTo}
-            >
-                길찾기
-            </Button>
-            <Button variant="contained"
-                startIcon={<img className="map_icon" src={require('../../assets/images/t_map.png')}/>}
-                onClick={tMapLinkTo}
-            >
-                길찾기
-            </Button>
         </div>
     );
 };

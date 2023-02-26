@@ -9,6 +9,7 @@ const Calendar = () => {
                src={require(`../assets/images/calendar_border.png`)}
             />
             <div className="calendar_wrapper">
+            <div className="f-l calendar_month">JUN</div>
                 <div className="calendar">
                     <div className="calendar_row_wrap">
                         <span className="calendar_day calendar_sun">SUN</span>

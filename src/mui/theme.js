@@ -8,6 +8,9 @@ export const theme = createTheme({
         },
         kakao: {
             main: '#fae100'
+        },
+        black: {
+            main: '#000'
         }
     }
 });

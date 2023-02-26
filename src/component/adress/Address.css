@@ -3,7 +3,14 @@
     margin-bottom: 5vh;
     width: 100%;
     min-height: 30vh;
+}
+.address_text_wrap{
+    padding-left: 3vw;
+    padding-right: 3vw;
     
+}
+.address_text_wrap > div {
+    text-align: left;
 }
 
 .address_text_wrap td{
@@ -26,9 +33,11 @@
     font-size: 1.2rem;
 }
 
-.blue {
-    color: blue;
+.shuttle{
+    text-decoration: underline;
+    text-decoration-color: lime;
 }
-.green {
-    color: green;
+
+.copyBtn{
+    padding-left: 0 !important;
 }

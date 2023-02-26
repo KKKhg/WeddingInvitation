@@ -29,6 +29,41 @@ html, body {
     padding: 0;
     border: 0;
     text-align: center;
-    font-family: ChosunGs;
+    font-family: 'SeoulHangang';
+    font-weight: 500;
 }
 
+
+.blue {
+    color: blue;
+}
+.green {
+    color: green;
+}
+.f-xl {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 2rem;
+}
+.f-l{
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.f-m{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.f-s{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.f-center{
+    text-align: center;
+}
+.f-left{
+    text-align: left;
+}
+.f-right{
+    text-align: right;
+}

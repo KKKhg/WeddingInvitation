@@ -6,18 +6,34 @@
 }
 
 @font-face {
-    font-family: 'KorailRoundGothicBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KorailRoundGothicBold.woff2') format('woff2');
+    font-family: 'SeoulHangang';
+    src: url('./SeoulHangangL.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SeoulHangang';
+    src: url('./SeoulHangangM.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SeoulHangang';
+    src: url('./SeoulHangangB.ttf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'SUIT-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'SeoulHangang';
+    src: url('./SeoulHangangEB.ttf');
+    font-weight: 900;
     font-style: normal;
 }
+
+
 
 @font-face {
     font-family: 'KakaoBold';
