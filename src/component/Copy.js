@@ -5,7 +5,7 @@ const Copy = ({children, text, onCopy}) => {
     
     function onCopyHandler() {
         if(onCopy) return onCopy;
-        else alert('복사되었습니다.');
+        else alert(`${text}\n복사되었습니다.`);
     };
     
     return (

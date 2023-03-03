@@ -1,27 +1,16 @@
 @import url('assets/fonts/fonts.css');
 
-@media (min-width: 768px) {
-    body {
-        background-color: #fff76750;
-    }
-    #root {
-        width: 576px;
-        background-color: #FFFACD;
-        margin: 0 auto;
-        min-height: 100%;
-        overflow: auto;
-    }
+body {
+    background-color: black;
+    z-index: -1;
 }
 
-html, body {
-    height: 100%;
+#wrapper > div {
+    margin-bottom: 10vh;
 }
 
-#root {
-    min-height: 100%;
-}
-#root > div {
-    margin-bottom: 5vh;
+#wrapper > div:last-child {
+    margin-bottom: 0;
 }
 
 * {
@@ -31,8 +20,8 @@ html, body {
     text-align: center;
     font-family: 'SeoulHangang';
     font-weight: 500;
+    line-height: 2rem;
 }
-
 
 .blue {
     color: blue;
@@ -66,4 +55,11 @@ html, body {
 }
 .f-right{
     text-align: right;
+}
+
+.sub_title {
+    font-family: 'MYYeongnamnu';
+    color: #9a9a9a;
+    font-size: 1rem;
+    line-height: 0.5rem;
 }

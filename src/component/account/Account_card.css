@@ -1,0 +1,28 @@
+.account_card_wrap {
+    margin-bottom: 4vh;
+}
+
+.account_card__wrap {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.account_card__wrap > span {
+    margin: 0;
+}
+
+.account_card__wrap > span:first-child {
+    margin-right: auto;
+}
+
+.account_card__wrap2 {
+    text-align: left;
+}
+
+.account_card_hr {
+    width: 95%;
+    height: 1px;
+    background: #03030350;
+    margin: 1vh auto;
+    
+}

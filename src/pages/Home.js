@@ -1,32 +1,30 @@
-import { Button } from "@mui/material";
-import React, { useState } from 'react';
+import React from 'react';
+import Account from "../component/account/Account";
 import Address from "../component/adress/Address";
 import Calendar from "../component/Calendar";
 import Footer from "../component/Footer";
 import Gallery from "../component/Gallery";
 import MainImg from "../component/MainImg";
-import BasicPortalModal from "../component/modal/BasicPortalModal";
+import SubImg from "../component/SubImg";
 import Timer from "../component/Timer";
 import VideoPlayer from "../component/VideoPlayer";
 import './Home.css';
 
 
-const Home = () => {
-    const [modal, setModal] = useState(false);
-    const modalOpen = () => setModal(true);
+const Home = () => { 
     
     return (
         <div className="wrapper" id="wrapper">
             {/* <VideoPlayer /> */}
             <MainImg />
-            <Gallery />
-            <>
+            <SubImg />
+            <div>
                 <Calendar />
                 <Timer />
-            </>
-            <BasicPortalModal modalOpen={modal} closeCallback={() => setModal(false)}>children</BasicPortalModal>
-            {/* <Button onClick={modalOpen}>openn</Button> */}
+            </div>
+            <Gallery />
             <Address />
+            <Account />
             <Footer />
         </div> 
     );

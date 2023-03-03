@@ -11,6 +11,13 @@ export const theme = createTheme({
         },
         black: {
             main: '#000'
+        },
+        account: {
+            main: '#c4c4c4'   
+        },
+        accountCopy: {
+            main: '#eee',
+            contrast: '#fff'
         }
     }
 });

@@ -3,9 +3,6 @@
     height: 100%;
     margin-bottom: 3vh;
 }
-.map_btn_wrapper{
-    
-}
 .map {
     margin-top: 2vh;
     margin-bottom: 3vh;
@@ -14,9 +11,10 @@
     z-index: 0;
 }
 .map_btn_wrapper {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .map_icon {
-    width: 15vw;
+    width: 50%;
 }

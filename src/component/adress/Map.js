@@ -59,7 +59,7 @@ const Map = () => {
                 </div>
             </div>
             <div className="map_btn_wrapper">
-                <div className="map_btn_wrap">
+                <div>
                     <Button onClick={kakaoMapLinkTo}>
                         <img className="map_icon" src={require('../../assets/images/kakao_map.png')}/>
                     </Button>
@@ -75,7 +75,7 @@ const Map = () => {
                     <Button onClick={tMapLinkTo}>
                         <img className="map_icon" src={require('../../assets/images/t_map.png')}/>
                     </Button>
-                    <div>티 맵</div>
+                    <div>티맵</div>
                 </div>
             </div>
         </div>

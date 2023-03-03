@@ -33,7 +33,7 @@ const Gallery = () => {
     }, [cnt])
 
     function setImageSize() {
-        const ratio = 1.5;
+        const ratio = 1.58;
         const wrap_width = document.querySelector('#wrapper').clientWidth;
         
         const standard_width = wrap_width;
@@ -52,6 +52,7 @@ const Gallery = () => {
     return (
         <div className="gallery_wrapper">
             <div className="f-xl">갤러리</div>
+            <div className="sub_title">GALLERY</div>
             <ImageGallery items={images}
                     showBullets={true}
                     showFullscreenButton={false}

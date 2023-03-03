@@ -11,59 +11,59 @@ const Calendar = () => {
             <div className="calendar_wrapper">
             <div className="f-l calendar_month">JUN</div>
                 <div className="calendar">
-                    <div className="calendar_row_wrap">
-                        <span className="calendar_day calendar_sun">SUN</span>
-                        <span className="calendar_day">MON</span>
-                        <span className="calendar_day">TUE</span>
-                        <span className="calendar_day">WED</span>
-                        <span className="calendar_day">THU</span>
-                        <span className="calendar_day">FRI</span>
-                        <span className="calendar_day calendar_sat">SAT</span>
+                    <div className="calendar_row_wrap_weekend">
+                        <div><span className="calendar_sun">SUN</span></div>
+                        <div><span>MON</span></div>
+                        <div><span>TUE</span></div>
+                        <div><span>WED</span></div>
+                        <div><span>THU</span></div>
+                        <div><span>FRI</span></div>
+                        <div><span className="calendar_sat">SAT</span></div>
                     </div>
                     <div className="calendar_row_wrap">
-                        <span className="calendar_date calendar_sun"></span>
-                        <span className="calendar_date"></span>
-                        <span className="calendar_date"></span>
-                        <span className="calendar_date"></span>
-                        <span className="calendar_date">1</span>
-                        <span className="calendar_date">2</span>
-                        <span className="calendar_date calendar_sat">3</span>
+                        <div><span className="calendar_sun"></span></div>
+                        <div><span></span></div>
+                        <div><span></span></div>
+                        <div><span></span></div>
+                        <div><span>1</span></div>
+                        <div><span>2</span></div>
+                        <div><span className="calendar_sat">3</span></div>
                     </div>
                     <div className="calendar_row_wrap">
-                        <span className="calendar_date calendar_sun">4</span>
-                        <span className="calendar_date">5</span>
-                        <span className="calendar_date">6</span>
-                        <span className="calendar_date">7</span>
-                        <span className="calendar_date">8</span>
-                        <span className="calendar_date">9</span>
-                        <span className="calendar_date calendar_sat">10</span>
+                        <div><span className="calendar_sun">4</span></div>
+                        <div><span>5</span></div>
+                        <div><span>6</span></div>
+                        <div><span>7</span></div>
+                        <div><span>8</span></div>
+                        <div><span>9</span></div>
+                        <div><span className="calendar_sat">10</span></div>
                     </div>
                     <div className="calendar_row_wrap">
-                        <span className="calendar_date calendar_sun">11</span>
-                        <span className="calendar_date">12</span>
-                        <span className="calendar_date">13</span>
-                        <span className="calendar_date">14</span>
-                        <span className="calendar_date">15</span>
-                        <span className="calendar_date">16</span>
-                        <span className="calendar_date calendar_sat">17</span>
+                        <div><span className="calendar_sun">11</span></div>
+                        <div><span>12</span></div>
+                        <div><span>13</span></div>
+                        <div><span>14</span></div>
+                        <div><span>15</span></div>
+                        <div><span>16</span></div>
+                        <div><span className="calendar_sat">17</span></div>
                     </div>
                     <div className="calendar_row_wrap">
-                        <span className="calendar_date calendar_sun">18</span>
-                        <span className="calendar_date">19</span>
-                        <span className="calendar_date">20</span>
-                        <span className="calendar_date">21</span>
-                        <span className="calendar_date">22</span>
-                        <span className="calendar_date">23</span>
-                        <span className="calendar_date calendar_sat d_day_">24</span>
+                        <div><span className="calendar_sun">18</span></div>
+                        <div><span>19</span></div>
+                        <div><span>20</span></div>
+                        <div><span>21</span></div>
+                        <div><span>22</span></div>
+                        <div><span>23</span></div>
+                        <div className="d_day_"><span>24</span></div>
                     </div>
                     <div className="calendar_row_wrap">
-                        <span className="calendar_date calendar_sun">25</span>
-                        <span className="calendar_date">26</span>
-                        <span className="calendar_date">27</span>
-                        <span className="calendar_date">28</span>
-                        <span className="calendar_date">29</span>
-                        <span className="calendar_date">30</span>
-                        <span className="calendar_date calendar_sat"></span>
+                        <div><span className="calendar_sun">25</span></div>
+                        <div><span>26</span></div>
+                        <div><span>27</span></div>
+                        <div><span>28</span></div>
+                        <div><span>29</span></div>
+                        <div><span>30</span></div>
+                        <div><span className="calendar_sat"></span></div>
                     </div>
                 </div>
             </div>       

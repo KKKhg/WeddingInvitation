@@ -1,5 +1,9 @@
 .wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 430px;
     min-height: 100%;
-    background-color: #FFFACD80;
+    background-color: #fffce6;
     background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
 }
