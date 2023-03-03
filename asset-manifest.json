@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/WeddingInvitation/static/css/main.bdf85e7f.css",
-    "main.js": "/WeddingInvitation/static/js/main.bd7c730a.js",
+    "main.css": "/WeddingInvitation/static/css/main.72cf7a68.css",
+    "main.js": "/WeddingInvitation/static/js/main.cc83552a.js",
     "static/js/787.c1112931.chunk.js": "/WeddingInvitation/static/js/787.c1112931.chunk.js",
     "static/media/SeoulHangangL.ttf": "/WeddingInvitation/static/media/SeoulHangangL.27a6ebafbb841862ecfa.ttf",
     "static/media/SeoulHangangM.ttf": "/WeddingInvitation/static/media/SeoulHangangM.39f5472180c87ee602e0.ttf",
     "static/media/SeoulHangangEB.ttf": "/WeddingInvitation/static/media/SeoulHangangEB.15abaf393928b11c50bc.ttf",
     "static/media/SeoulHangangB.ttf": "/WeddingInvitation/static/media/SeoulHangangB.824e841e32a4c5ed9965.ttf",
+    "static/media/MYYeongnamnu.ttf": "/WeddingInvitation/static/media/MYYeongnamnu.c21c29b7600e29cddc25.ttf",
     "static/media/6.jpg": "/WeddingInvitation/static/media/6.3f9dbfeb1601b0cc4bac.jpg",
     "static/media/main_img.jpg": "/WeddingInvitation/static/media/main_img.a358fc559dfe8f6c4b38.jpg",
     "static/media/3.jpg": "/WeddingInvitation/static/media/3.55754b83d533714594d2.jpg",
@@ -18,14 +19,15 @@
     "static/media/KakaoBold.woff2": "/WeddingInvitation/static/media/KakaoBold.02be61b74c5e6d5337ea.woff2",
     "static/media/naver_map.png": "/WeddingInvitation/static/media/naver_map.ff204328654ba69eaf3f.png",
     "static/media/t_map.png": "/WeddingInvitation/static/media/t_map.ca2f45e4596a776fa686.png",
-    "static/media/kakao_map.png": "/WeddingInvitation/static/media/kakao_map.24e351152ad3aceb9cd3.png",
+    "static/media/kakao_map.png": "/WeddingInvitation/static/media/kakao_map.30d2784a472a3ee479b9.png",
+    "static/media/sub_img2.jpeg": "/WeddingInvitation/static/media/sub_img2.60df6d5ebf8f99a8e4a1.jpeg",
     "index.html": "/WeddingInvitation/index.html",
-    "main.bdf85e7f.css.map": "/WeddingInvitation/static/css/main.bdf85e7f.css.map",
-    "main.bd7c730a.js.map": "/WeddingInvitation/static/js/main.bd7c730a.js.map",
+    "main.72cf7a68.css.map": "/WeddingInvitation/static/css/main.72cf7a68.css.map",
+    "main.cc83552a.js.map": "/WeddingInvitation/static/js/main.cc83552a.js.map",
     "787.c1112931.chunk.js.map": "/WeddingInvitation/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdf85e7f.css",
-    "static/js/main.bd7c730a.js"
+    "static/css/main.72cf7a68.css",
+    "static/js/main.cc83552a.js"
   ]
 }
