@@ -71,7 +71,7 @@ const Comment = () => {
                                 <CommentCard 
                                     emoji={emojis[(idx % emojis.length)]}
                                     author={el.author}
-                                    dateTime={el.created_at.substring(5,16)}
+                                    dateTime={el.created_at?.substring(5,16)}
                                     comment={el.comment}
                                 />
                             </SwiperSlide>
