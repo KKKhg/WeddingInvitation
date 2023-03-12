@@ -63,6 +63,9 @@ const Comment = () => {
                 slidesPerView={2.5}
                 freeMode={true}
                 onReachEnd={onReachEnd}
+                grabCursor={true}
+                threshold={1}
+                touchMoveStopPropagation={true}
             >
                 {
                     comments?.map((el, idx) => {
