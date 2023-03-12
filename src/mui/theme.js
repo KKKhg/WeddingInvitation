@@ -10,7 +10,7 @@ export const theme = createTheme({
             main: '#fae100'
         },
         black: {
-            main: '#000'
+            main: '#000',
         },
         account: {
             main: '#c4c4c4'   
@@ -18,6 +18,9 @@ export const theme = createTheme({
         accountCopy: {
             main: '#eee',
             contrast: '#fff'
+        },
+        blackButton: {
+            main: '#fff',
         }
     }
 });

@@ -1,0 +1,25 @@
+
+.commentWrap {
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.swiper-wrapper { 
+    display: -webkit-inline-box 
+}
+
+.commentCardWrap {
+    width: 100px;
+    margin: 0;
+}
+
+.comemntFooter {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comemntFooter > span{
+    margin-left: 5%;
+    margin-right: 5%;
+}

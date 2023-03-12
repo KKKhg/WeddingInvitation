@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import './Footer.css';
 
+
 const Footer = () => {
    
     function sendKakaoLink() {

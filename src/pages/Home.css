@@ -1,9 +1,25 @@
 .wrapper {
-    position: relative;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     max-width: 430px;
     min-height: 100%;
+    height: 100%;
     background-color: #fffce6;
     background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
 }
+
+/* .wrapper > div:nth-child(2n-1) {
+    background-color: blue;
+}
+
+.wrapper > div:nth-child(2n) {
+    background-color: green;
+}
+
+.wrapper > div:last-child {
+    background-color: wheat;   
+} */
+
+
+/* toasify */
+

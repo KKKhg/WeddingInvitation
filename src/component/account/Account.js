@@ -28,13 +28,44 @@ const Account = () => {
                             <Account_card 
                                 title='신랑 아버지'
                                 bank='농협'
-                                name='ㅁㅁㅁ'
+                                name='강명석'
                                 account='123123'
                             />
                             <Account_card 
                                 title='신랑 어머니'
                                 bank='국민'
-                                name='ㅇㅇㅇ'
+                                name='김순영'
+                                account='123123'
+                            />
+                        </div>
+                    </AccordionDetails>
+                </Accordion>
+            </div>
+            <div className="account_btn_wrap">
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMore />}
+                    >
+                        <div>신부측 계좌번호</div>
+                    </AccordionSummary>
+                    <AccordionDetails id="accordion1">
+                        <div>
+                            <Account_card 
+                                title='신부'
+                                bank='신한'
+                                name='안유진'
+                                account='123'
+                            />
+                            <Account_card 
+                                title='신부 아버지'
+                                bank='농협'
+                                name='안성포'
+                                account='123123'
+                            />
+                            <Account_card 
+                                title='신부 어머니'
+                                bank='국민'
+                                name='최은주'
                                 account='123123'
                             />
                         </div>
@@ -42,7 +73,7 @@ const Account = () => {
                 </Accordion>
             </div>
         </div>
-    );
+    )
 };
 
 export default Account;

@@ -1,0 +1,44 @@
+.writeCommentModalWrap {
+    width: 100%;
+    height: 100%;
+}
+
+.writeCommentModaltitle {
+    color: #000;
+    margin-bottom: 4vh;
+}
+
+.writeWrap1 {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.writeWrap1 > div:first-child {
+    margin-right: 3%;
+}
+.writeWrap1 > div:last-child {
+    margin-left: 3%;
+}
+
+.writeWrap2 {
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.writeWrap2 > div {
+    width: 100%;
+}
+
+.writeWrap2 > div > div {
+    width: 100%;
+}
+
+.commentLength {
+    text-align: right;
+    font-size: 0.7rem;
+}
+
+.writeCommentBtn {
+    margin-top: 2vh;    
+}
