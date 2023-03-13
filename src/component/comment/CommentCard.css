@@ -13,13 +13,14 @@
     z-index: 2;
 }
 
-p {
+.comment {
     width: 90%;
     height: 60%;
     padding-top: 5%;
     line-height: 1.3rem;
     font-size: 0.8rem;
     overflow: scroll;
+    white-space: pre-wrap;
 }
 
 .commentFooter {

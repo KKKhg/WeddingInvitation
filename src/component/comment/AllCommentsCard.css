@@ -1,0 +1,33 @@
+.allCommentsCardWrap {
+}
+
+.allCommentsCardWrap > hr {
+    background: #a5a5a5;
+    height: 1px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.allCommentsCardTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.allCommentsCardTitle  * {
+    margin: 0 ;
+}
+
+.allCommentsContent {
+    text-align: left;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.allCommentsDateTime {
+    font-size: 0.8rem;
+    text-align: right;
+    color: #a6a6a6;
+}

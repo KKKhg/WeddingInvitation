@@ -34,3 +34,12 @@ export const insertComment = async (author, password, comment) => {
         console.log(e);
     }
 }
+
+export const deleteComments = async (idx, password) => {
+    const query = `idx=${idx}&password=${password}`
+    const res = await fetch(BASEURL + APIPATH.WEDDING + `deleteComment?${query}`, 
+    {
+        method: 'post'
+    });
+    return await res.json();
+}

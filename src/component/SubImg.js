@@ -5,7 +5,7 @@ import './SubImg.css';
 const SubImg = () => {
     return (
         <div className="subImg_wrap">
-            <img src={require('../assets/images/sub_img2.jpeg')}
+            <img data-src={require('../assets/images/sub_img2.jpeg')}
                 width='100%'
             />
             <div>

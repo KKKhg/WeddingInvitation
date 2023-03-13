@@ -1,0 +1,18 @@
+.allCommentsContainer {
+    height: 50vh;
+}
+
+.allCommentsWrap {
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    height: 90%;
+    overflow: scroll;
+}
+
+.allCommentsTitle {
+    color: #000;
+    margin-bottom: 4vh;
+}

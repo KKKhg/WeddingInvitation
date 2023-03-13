@@ -12,12 +12,12 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: '60%',
   bgcolor: 'background.paper',
-  borderRadius: '3vw',
+  borderRadius: '3%',
   boxShadow: 24,
   p: 4,
 };
 
-const BasicPortalModal = ({children, modalOpen, closeCallback}) => {
+const BasicPortalModal = ({children, modalOpen, closeCallback, styles=null}) => {
     const el = document.getElementById('root_modal');
     
     const [open, setOpen] = useState(false);
@@ -47,7 +47,7 @@ const BasicPortalModal = ({children, modalOpen, closeCallback}) => {
                     }}
                 >
                 <Fade in={open}>
-                    <Box sx={style}>
+                    <Box sx={[style, styles]}>
                         {children}  
                     </Box>
                 </Fade>

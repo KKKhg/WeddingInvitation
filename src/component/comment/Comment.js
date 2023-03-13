@@ -9,11 +9,13 @@ import { Button } from "@mui/material";
 import BasicPortalModal from "../modal/BasicPortalModal";
 import WriteComment from "./WriteComment";
 import { getComments } from "../../network";
+import AllComments from "./AllComments";
 
 const emojis = ['👰🏻‍♀️❤️🤵🏻', '🌼', '🌸', '🍀'];
 
 const Comment = () => {
     const [comments, setComments] = useState([]);
+    const [allCommentsOn, setAllCommentsOn] = useState(false);
     const [writeCommentModalOn, setWriteCommentModalOn] = useState(false);
     const page = useRef(1);
     const isFirstReachEnd = useRef(true);
@@ -26,7 +28,6 @@ const Comment = () => {
     async function _getcomments() {
         if(isCommentsEnd.current) return;
         const res = await getComments(page.current);
-        console.log("🚀 ~ file: Comment.js:21 ~ _getcomments ~ res:", res);
         if(res?.result) {
             if(res.data?.length < 1) isCommentsEnd.current = true;
             page.current += 1;
@@ -38,7 +39,6 @@ const Comment = () => {
         page.current = 1;
         isCommentsEnd.current = false;
         const res = await getComments(page.current);
-        console.log("🚀 ~ file: Comment.js:21 ~ _getcomments ~ res:", res);
         if(res?.result) {
             page.current += 1;
             setComments([...res.data]);
@@ -83,11 +83,19 @@ const Comment = () => {
                 }
             </Swiper>
             <div className="comemntFooter">
-                <Button color="black">전체 보기</Button>
-                <Button color="black"
-                    onClick={() => setWriteCommentModalOn(true)}
+                <Button color="black" onClick={() => setAllCommentsOn(true)}>전체 보기</Button>
+                <Button color="black" onClick={() => setWriteCommentModalOn(true)}
                 >방명록 작성</Button>
             </div>
+            
+            {/* 전체보기 모달 */}
+            <BasicPortalModal
+                modalOpen={allCommentsOn}
+                closeCallback={() => setAllCommentsOn(false)}
+                styles={{width: '70%' ,paddingLeft: '1%', paddingRight: '1%'}}
+            >
+                <AllComments />
+            </BasicPortalModal>
             
             
             {/* 방명록 작성 모달*/}

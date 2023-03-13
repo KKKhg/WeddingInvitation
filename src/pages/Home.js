@@ -32,16 +32,17 @@ const Home = () => {
             <Comment />
             <Footer />
             <ToastContainer 
-                position="bottom-center"
+                position="top-center"
                 autoClose={2000}
                 hideProgressBar={true}
                 newestOnTop={true}
                 closeOnClick
-                rtl={false}
+                rtl={true}
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
                 theme="light"
+                limit={1}
             />
         </div> 
     );
