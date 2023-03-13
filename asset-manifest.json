@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WeddingInvitation/static/css/main.f9545c3e.css",
-    "main.js": "/WeddingInvitation/static/js/main.6ef39e77.js",
+    "main.css": "/WeddingInvitation/static/css/main.b6a97106.css",
+    "main.js": "/WeddingInvitation/static/js/main.3333b692.js",
     "static/js/787.c1112931.chunk.js": "/WeddingInvitation/static/js/787.c1112931.chunk.js",
     "static/media/SeoulHangangL.ttf": "/WeddingInvitation/static/media/SeoulHangangL.27a6ebafbb841862ecfa.ttf",
     "static/media/SeoulHangangM.ttf": "/WeddingInvitation/static/media/SeoulHangangM.39f5472180c87ee602e0.ttf",
@@ -22,12 +22,12 @@
     "static/media/kakao_map.png": "/WeddingInvitation/static/media/kakao_map.30d2784a472a3ee479b9.png",
     "static/media/sub_img2.jpeg": "/WeddingInvitation/static/media/sub_img2.60df6d5ebf8f99a8e4a1.jpeg",
     "index.html": "/WeddingInvitation/index.html",
-    "main.f9545c3e.css.map": "/WeddingInvitation/static/css/main.f9545c3e.css.map",
-    "main.6ef39e77.js.map": "/WeddingInvitation/static/js/main.6ef39e77.js.map",
+    "main.b6a97106.css.map": "/WeddingInvitation/static/css/main.b6a97106.css.map",
+    "main.3333b692.js.map": "/WeddingInvitation/static/js/main.3333b692.js.map",
     "787.c1112931.chunk.js.map": "/WeddingInvitation/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9545c3e.css",
-    "static/js/main.6ef39e77.js"
+    "static/css/main.b6a97106.css",
+    "static/js/main.3333b692.js"
   ]
 }
