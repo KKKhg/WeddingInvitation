@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { pad } from "../utils/StringUtils";
 import './Timer.css';
 
+const d_day = new Date('2023-06-24 13:50:00').getTime();
+const isAfter = new Date().getTime() - d_day > 0 ? true : false;
+
 const Timer = () => {
-    const d_day = new Date('2023-06-25 13:50:00').getTime();
     const [remainDttm, setRemainDttm] = useState({
         d: 0,
         h: 0,
@@ -23,7 +25,7 @@ const Timer = () => {
     
     function countRemainTime() {
         const now = new Date().getTime();
-        const remainTime = d_day - now;
+        const remainTime = isAfter ? now - d_day : d_day - now;
         setRemainDttm(convert(remainTime));
     };
     
@@ -50,7 +52,7 @@ const Timer = () => {
     return (
         <div className="timer_wrapper">
             <div className="timer_line">
-                <div className="timer_title">우리 결혼까지</div>
+                <div className="timer_title">{isAfter === true ? '우리 결혼한지' : '우리 결혼까지'}</div>
                 <div className="miniCardWrap">
                     <MiniCard top={remainDttm.d} bottom='DAY'/>
                     <MiniCard top={remainDttm.h} bottom='HOUR'/>
