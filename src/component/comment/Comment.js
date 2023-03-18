@@ -31,7 +31,6 @@ const Comment = () => {
         const res = await getComments(page.current);
         if(res?.result) {
             if(res.data?.length < 1) isCommentsEnd.current = true;
-            console.log("🚀 ~ file: Comment.js:34 ~ _getcomments ~ res.data:", res.data)
             page.current += 1;
             setComments((prev) => ([...prev, ...res.data]));
         }

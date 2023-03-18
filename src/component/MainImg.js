@@ -11,7 +11,6 @@ const MainImg = () => {
             <div className="subject_wrapper">
                 <div className="subject_wrapper_box1">
                     <div className="subject_wrapper_box2">
-                        {/* <div className="subject_date">2023. 06. 24. 토요일 오후 1시 50분</div> */}
                         <div className="subject_date1"><span className="subject_font">강현구</span> & <span className="subject_font">안유진</span></div>
                         <div className="subject_location">23. 06. 24. 토요일 오후 1시 50분</div>
                     </div>

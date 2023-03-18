@@ -1,34 +1,34 @@
 @font-face {
     font-family: 'SeoulHangang';
-    src: url('./SeoulHangangL.ttf');
+    src: url('./SeoulHangangL.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SeoulHangang';
-    src: url('./SeoulHangangM.ttf');
+    src: url('./SeoulHangangM.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SeoulHangang';
-    src: url('./SeoulHangangB.ttf');
+    src: url('./SeoulHangangB.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SeoulHangang';
-    src: url('./SeoulHangangEB.ttf');
+    src: url('./SeoulHangangEB.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'MYYeongnamnu';
-    src: url('./MYYeongnamnu.ttf');
+    src: url('./MYYeongnamnu.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }

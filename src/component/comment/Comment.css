@@ -8,11 +8,6 @@
     display: -webkit-inline-box 
 }
 
-.commentCardWrap {
-    width: 100%;
-    margin: 0;
-}
-
 .comemntFooter {
     margin-top: 2vh;
     display: flex;
