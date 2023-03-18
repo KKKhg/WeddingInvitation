@@ -20,7 +20,7 @@ const AllComments = () => {
     };
     
     async function removeClickHandler(idx) {
-        let password = prompt('방명록을 삭제합니다. 비밀번호를 입력해주세요.');
+        let password = prompt('축하메세지를 삭제합니다. 비밀번호를 입력해주세요.');
         const res = await deleteComments(idx, password);
         if(res?.result === false) {
             return toast.error(res.msg);
@@ -34,7 +34,7 @@ const AllComments = () => {
     
     return (
         <div className="allCommentsContainer">
-            <div className="sub_title allCommentsTitle">방명록 목록</div>
+            <div className="sub_title allCommentsTitle">축하메세지 목록</div>
             <div className="allCommentsWrap">
                 {
                     allComments?.map((el, idx) => {
