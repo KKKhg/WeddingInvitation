@@ -9,11 +9,11 @@ const Address = () => {
     return (
         <div className="address_wrap">
             <div className="f-xl">오시는 길</div>
-            <div className="sub_title">LOCATION</div>
+            {/* <div className="sub_title">LOCATION</div> */}
             <Map />
             <div className="address_text_wrap">
-                <div className="f-l">상록아트홀 5F 아트홀</div>
-                <div className="f-l">
+                <div className="weddingHall_name f-l">상록아트홀 5F 아트홀</div>
+                <div className="weddingHall_name f-l">
                     서울특별시 강남구 언주로 508
                     <Button className="copyBtn" color="black">
                         <Copy text='서울특별시 강남구 언주로 508'>

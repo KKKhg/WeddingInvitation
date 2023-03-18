@@ -53,7 +53,7 @@ const Gallery = () => {
     return (
         <div className="gallery_wrapper">
             <div className="f-xl">갤러리</div>
-            <div className="subtitle">GALLERY</div>
+            {/* <div className="subtitle">GALLERY</div> */}
             <ImageGallery items={images}
                     showBullets={true}
                     showFullscreenButton={false}

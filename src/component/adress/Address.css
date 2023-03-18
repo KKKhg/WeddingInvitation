@@ -7,13 +7,15 @@
 .address_text_wrap{
     padding-left: 3vw;
     padding-right: 3vw;
-    
 }
 .address_text_wrap  div {
     color: #89757a;
 } 
 .address_text_wrap > div {
     text-align: left;
+}
+.weddingHall_name {
+    color: #000 !important;
 }
 
 .address_text_wrap td{

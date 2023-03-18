@@ -29,8 +29,17 @@
     color: #000;
 }
 
+.subject_font {
+    font-size: 1.5rem;
+}
+
 .subject_date {
     margin-bottom: 5%;
 }
+.subject_date1 {
+    margin-bottom: 5%;
+}
+
 .subject_location {
+    font-size: 1rem;
 }

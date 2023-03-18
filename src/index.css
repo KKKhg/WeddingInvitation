@@ -7,12 +7,28 @@ body {
 }
 
 #wrapper > div {
-    padding-bottom: 10vh;
+    padding-top: 7vh;
 }
 
 #wrapper > div:last-child {
     padding-bottom: 0;
 }
+
+#wrapper > div:nth-child(1) {
+    padding-top: 0;
+} 
+
+#wrapper > div:nth-child(5) {
+    padding-top: 0;
+} 
+
+#wrapper > div:nth-child(6) {
+    padding-top: 5vh;
+} 
+
+#wrapper > div:last-child {
+    padding-top: 0;
+} 
 
 * {
     margin: 0;
