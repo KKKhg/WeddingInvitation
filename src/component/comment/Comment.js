@@ -83,6 +83,15 @@ const Comment = () => {
                         )
                     })
                 }
+                {
+                    comments?.length < 5 ? 
+                    <SwiperSlide>
+                        <CommentCard 
+                            empty={true}
+                            emptyClick={() => setWriteCommentModalOn(true)}
+                        />
+                    </SwiperSlide> : null
+                }
             </Swiper>
             <div className="comemntFooter">
                 <Button color="black" onClick={() => setAllCommentsOn(true)}>전체 보기</Button>
