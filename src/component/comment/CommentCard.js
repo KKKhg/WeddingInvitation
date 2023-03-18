@@ -7,7 +7,6 @@ const CommentCard = ({emoji, author, dateTime, comment}) => {
     
     return (
         <div className="commentCardWrap">
-            {/* <div className="commentSubject">subject</div> */}
             <div className="commentSubject">{emoji}</div>
             <p className="comment">{comment}</p>
             <div className="commentFooter">

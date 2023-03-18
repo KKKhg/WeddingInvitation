@@ -1,6 +1,6 @@
 .address_wrap {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     width: 100%;
     min-height: 30vh;
 }

@@ -1,7 +1,7 @@
 
 .commentWrap {
     width: 100%;
-    margin-bottom: 5vh;
+    padding-bottom: 5vh;
 }
 
 .swiper-wrapper { 
@@ -9,7 +9,7 @@
 }
 
 .commentCardWrap {
-    width: 100px;
+    width: 100%;
     margin: 0;
 }
 

@@ -1,7 +1,8 @@
 .commentCardWrap {
     margin-left: 2%;
     width: 90%;
-    height: 25vh;   
+    /* height: 25vh;    */
+    height: 30vh;   
     background-color: #fff;
     border-radius: 10px;
 }

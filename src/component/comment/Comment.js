@@ -10,6 +10,7 @@ import BasicPortalModal from "../modal/BasicPortalModal";
 import WriteComment from "./WriteComment";
 import { getComments } from "../../network";
 import AllComments from "./AllComments";
+import isMobile from "../../utils/isMobile";
 
 const emojis = ['👰🏻‍♀️❤️🤵🏻', '🌼', '🌸', '🍀'];
 
@@ -30,6 +31,7 @@ const Comment = () => {
         const res = await getComments(page.current);
         if(res?.result) {
             if(res.data?.length < 1) isCommentsEnd.current = true;
+            console.log("🚀 ~ file: Comment.js:34 ~ _getcomments ~ res.data:", res.data)
             page.current += 1;
             setComments((prev) => ([...prev, ...res.data]));
         }
@@ -57,7 +59,7 @@ const Comment = () => {
     
     return (
         <div className="commentWrap">
-            <div className="f-l">방명록</div>
+            <div className="f-l" style={{paddingBottom: '2vh'}}>방명록</div>
             <Swiper
                 spaceBetween={0}
                 slidesPerView={2.5}
@@ -92,7 +94,7 @@ const Comment = () => {
             <BasicPortalModal
                 modalOpen={allCommentsOn}
                 closeCallback={() => setAllCommentsOn(false)}
-                styles={{width: '70%' ,paddingLeft: '1%', paddingRight: '1%'}}
+                styles={{width: isMobile() ? '70%' : '320px' ,paddingLeft: '1%', paddingRight: '1%'}}
             >
                 <AllComments />
             </BasicPortalModal>

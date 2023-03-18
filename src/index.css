@@ -7,15 +7,15 @@ body {
 }
 
 #wrapper > div {
-    margin-bottom: 10vh;
+    padding-bottom: 10vh;
 }
 
 #wrapper > div:last-child {
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     border: 0;
     text-align: center;
@@ -46,6 +46,10 @@ body {
 }
 .f-s{
     font-size: 0.9rem;
+    font-weight: 300;
+}
+.f-xs{
+    font-size: 0.7rem;
     font-weight: 300;
 }
 .f-center{

@@ -1,3 +1,16 @@
 .subImg_wrap {
-    
+}
+
+.subImg_wrap > img {
+    width: 100%;
+}
+
+
+
+.inviteMent {
+    line-height: 2rem;
+}
+
+.lg {
+    color: #887f63;
 }

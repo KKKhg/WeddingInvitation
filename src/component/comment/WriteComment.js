@@ -18,7 +18,7 @@ const WriteComment = ({closeCallback}) => {
     function _setAuthor(newValue) {
         if(newValue?.length > 10) {
             setError((prev) => ({...prev, author: true}));
-            return toast.error('이름은 10자 이하로 입력해주세요.');
+            return toast.error('이름은 10자 이하로 입력해주세요ßßß');
         } else {
             setError((prev) => ({...prev, author: false}));
             setAuthor(newValue);
@@ -28,7 +28,7 @@ const WriteComment = ({closeCallback}) => {
     function _setPassword(newValue) {
         if(newValue?.length > 20) {
             setError((prev) => ({...prev, password: true}));
-            return toast.error('비밀번호는 20자 이하로 입력해주세요.');
+            return toast.error('비밀번호는 20자 이하로 입력해주세요');
         } else {
             setError((prev) => ({...prev, password: false}));
             setPassword(newValue);
@@ -38,7 +38,7 @@ const WriteComment = ({closeCallback}) => {
     function _setComment(newValue) {
         if(newValue?.length > 100) {
             setError((prev) => ({...prev, comment: true}));
-            return toast.error('내용은 100자 이하로 입력해주세요.');
+            return toast.error('내용은 100자 이하로 입력해주세요');
         } else {
             setError((prev) => ({...prev, comment: false}));
             setComment(newValue);
@@ -48,19 +48,19 @@ const WriteComment = ({closeCallback}) => {
     async function submit (){
         if(!author) {
             setError((prev) => ({...prev, author: true}));
-            return toast.error('이름을 입력해주세요.');
+            return toast.error('이름을 입력해주세요');
         };
         setError((prev) => ({...prev, author: false}));
         
         if(!password) {
             setError((prev) => ({...prev, password: true}));
-            return toast.error('비밀번호를 입력해주세요.');
+            return toast.error('비밀번호를 입력해주세요');
         };
         setError((prev) => ({...prev, password: false}));   
         
         if(!comment) {
             setError((prev) => ({...prev, comment: true}));
-            return toast.error('내용을 입력해주세요.');
+            return toast.error('내용을 입력해주세요');
         };
         setError((prev) => ({...prev, comment: false}));
         const res = await insertComment(author, password, comment);
@@ -68,7 +68,6 @@ const WriteComment = ({closeCallback}) => {
             toast.success(res.msg);
             closeCallback();
         }
-        
     }
     
     return (

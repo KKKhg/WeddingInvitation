@@ -1,5 +1,4 @@
 import React from 'react';
-import { ToastContainer } from "react-toastify";
 import Account from "../component/account/Account";
 import Address from "../component/adress/Address";
 import Calendar from "../component/Calendar";
@@ -11,7 +10,6 @@ import SubImg from "../component/SubImg";
 import Timer from "../component/Timer";
 import VideoPlayer from "../component/VideoPlayer";
 import './Home.css';
-import "react-toastify/dist/ReactToastify.css";
 
 
 
@@ -19,7 +17,6 @@ const Home = () => {
     
     return (
         <div className="wrapper" id="wrapper">
-            {/* <VideoPlayer /> */}
             <MainImg />
             <SubImg />
             <div>
@@ -31,19 +28,6 @@ const Home = () => {
             <Account />
             <Comment />
             <Footer />
-            <ToastContainer 
-                position="top-center"
-                autoClose={2000}
-                hideProgressBar={true}
-                newestOnTop={true}
-                closeOnClick
-                rtl={true}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-                limit={1}
-            />
         </div> 
     );
 }

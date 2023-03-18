@@ -4,7 +4,12 @@ import './Timer.css';
 
 const Timer = () => {
     const d_day = new Date('2023-06-25 13:50:00').getTime();
-    const [remainDttm, setRemainDttm] = useState();
+    const [remainDttm, setRemainDttm] = useState({
+        d: 0,
+        h: 0,
+        m: 0,
+        s: 0
+    });
     
     useEffect(() => {
         countRemainTime();
@@ -19,9 +24,17 @@ const Timer = () => {
     function countRemainTime() {
         const now = new Date().getTime();
         const remainTime = d_day - now;
-        const _remainTime = convert(remainTime);
-        setRemainDttm(`${_remainTime.d}일 ${_remainTime.h}시간 ${_remainTime.m}분 ${_remainTime.s}초`)
+        setRemainDttm(convert(remainTime));
     };
+    
+    function MiniCard({top, bottom}) {
+        return (
+            <div className="miniCard">
+                <div>{top}</div>
+                <div>{bottom}</div>
+            </div>
+        )
+    }
     
     function convert(timeStamp) {
         const day = Math.floor(timeStamp/(1000*60*60*24));
@@ -36,7 +49,15 @@ const Timer = () => {
     
     return (
         <div className="timer_wrapper">
-            결혼식까지 {remainDttm} 남았습니다.<br />
+            <div className="timer_line">
+                <div className="timer_title">우리 결혼까지</div>
+                <div className="miniCardWrap">
+                    <MiniCard top={remainDttm.d} bottom='DAY'/>
+                    <MiniCard top={remainDttm.h} bottom='HOUR'/>
+                    <MiniCard top={remainDttm.m} bottom='MINUTE'/>
+                    <MiniCard top={remainDttm.s} bottom='SECOND'/>
+                </div>
+            </div>
         </div>
     )
 }

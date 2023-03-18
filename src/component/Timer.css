@@ -1,6 +1,47 @@
 .timer_wrapper {
-    padding: 5% 0;
-    width: 100%;
+    padding: 3% 3%;
     text-align: center;
-    background-color: #fff;
+    /* background-color: #fff; */
+}
+
+.timer_line{
+    padding: 3% 5%;
+    border: 1px solid #00000030;
+    border-radius: 3%;
+}
+.timer_title{
+    color: #aeaeae;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    padding-top: 5%;
+}
+
+.miniCardWrap{
+}
+
+.miniCard {
+    margin: 2% 1.5%;
+    padding: 4% 2%;
+    padding-top: 3%;
+    display: inline-block;
+    width: 13%;
+    height: 20%;
+    /* border: 1px solid #aeaeaec3; */
+    text-align: center;
+}
+
+.miniCard > div {
+    text-align: center;
+    line-height: 1.1rem;
+}
+
+.miniCard > div:first-child {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.miniCard > div:last-child {
+    font-size: 0.1rem;
 }

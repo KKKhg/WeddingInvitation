@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Gallery.css';
 import ImageGallery from 'react-image-gallery';
+import isMobile from "../utils/isMobile";
 
 const _images = [
     {
@@ -52,7 +53,7 @@ const Gallery = () => {
     return (
         <div className="gallery_wrapper">
             <div className="f-xl">갤러리</div>
-            <div className="sub_title">GALLERY</div>
+            <div className="subtitle">GALLERY</div>
             <ImageGallery items={images}
                     showBullets={true}
                     showFullscreenButton={false}

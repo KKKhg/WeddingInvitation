@@ -4,22 +4,33 @@
     max-width: 430px;
     min-height: 100%;
     height: 100%;
-    background-color: #fffce6;
+    /* background-color: #fffce6; */
+    background-color: #fffef3;
+    /* background-color: #fffffe; */
     background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
 }
 
 /* .wrapper > div:nth-child(2n-1) {
-    background-color: blue;
+    background-color: #fffffe;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
 }
 
 .wrapper > div:nth-child(2n) {
-    background-color: green;
+    background-color: #fffffe;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
 }
 
-.wrapper > div:last-child {
-    background-color: wheat;   
+.wrapper > div:nth-child(1) {
+    background-color: #fffffe;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
 } */
 
+.wrapper > div:nth-child(3) {
+    background-color: #fffffe;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
+}
 
-/* toasify */
 
+.wrapper > div:last-child {
+    background-color: rgb(227, 227, 227);   
+}
