@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import { deleteComments, getComments } from "../../network";
 import './AllComments.css';
 import AllCommentsCard from "./AllCommentsCard";
+import CreateRoundedIcon from '@mui/icons-material/CreateRounded';
 
 const AllComments = () => {
     const [allComments, setAllComments] = useState([]);
@@ -20,7 +21,7 @@ const AllComments = () => {
     };
     
     async function removeClickHandler(idx) {
-        let password = prompt('축하메세지를 삭제합니다. 비밀번호를 입력해주세요.');
+        let password = prompt('축하메시지를 삭제합니다. 비밀번호를 입력해주세요.');
         const res = await deleteComments(idx, password);
         if(res?.result === false) {
             return toast.error(res.msg);
@@ -34,9 +35,13 @@ const AllComments = () => {
     
     return (
         <div className="allCommentsContainer">
-            <div className="sub_title allCommentsTitle">축하메세지 목록</div>
+            <div className="sub_title allCommentsTitle">축하메시지 목록</div>
             <div className="allCommentsWrap">
-                {
+                {   allComments?.length < 1 ? 
+                    <div className="emptyComments">
+                        <div>첫번째 축하메시지를 작성해보세요.</div>
+                    </div>
+                    :
                     allComments?.map((el, idx) => {
                         const dateTime = Intl.DateTimeFormat('ko', {dateStyle: 'full', timeStyle: 'short'}).format(new Date(el.created_at));
                         return (

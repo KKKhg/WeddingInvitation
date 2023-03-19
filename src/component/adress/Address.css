@@ -42,6 +42,11 @@
     text-decoration-color: #ff6a2f;
 }
 
+.shuttleBtnWrap > div {
+    text-align: right;
+}
+
 .copyBtn{
     padding-left: 0 !important;
 }
+

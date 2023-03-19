@@ -58,7 +58,7 @@ const Comment = () => {
     
     return (
         <div className="commentWrap">
-            <div className="f-l" style={{paddingBottom: '2vh'}}>축하메세지</div>
+            <div className="f-l" style={{paddingBottom: '2vh'}}>축하메시지</div>
             <Swiper
                 spaceBetween={0}
                 slidesPerView={2.5}
@@ -95,7 +95,7 @@ const Comment = () => {
             <div className="comemntFooter">
                 <Button color="black" onClick={() => setAllCommentsOn(true)}>전체 보기</Button>
                 <Button color="black" onClick={() => setWriteCommentModalOn(true)}
-                >축하메세지 작성</Button>
+                >축하메시지 작성</Button>
             </div>
             
             {/* 전체보기 모달 */}

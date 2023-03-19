@@ -21,7 +21,7 @@ const CommentCard = ({emoji, author, dateTime, comment, empty = false, emptyClic
                 :
                 <div className="comment" style={{transform: 'translate(0%, 50%)'}} onClick={emptyClick}>
                     <CreateRoundedIcon /><br/>
-                    <span>축하메세지 작성하기</span>
+                    <span>축하메시지 작성하기</span>
                 </div>
             }
         </div>      

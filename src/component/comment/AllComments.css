@@ -9,10 +9,15 @@
     margin-bottom: 5%;
     width: 90%;
     height: 90%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .allCommentsTitle {
     color: #000;
     margin-bottom: 4vh;
 }
+
+.emptyComments {
+    padding-top: 50%;
+}
+

@@ -72,7 +72,7 @@ const WriteComment = ({closeCallback}) => {
     
     return (
         <div className="writeCommentModalWrap">
-            <div className="sub_title writeCommentModaltitle">축하메세지 작성</div>
+            <div className="sub_title writeCommentModaltitle">축하메시지 작성</div>
             <div className="writeWrap1">
                 <div>
                     <TextField 
@@ -119,7 +119,7 @@ const WriteComment = ({closeCallback}) => {
                     variant="outlined"
                     fullWidth={true}
                     onClick={submit}
-                >축하메세지 저장</Button>
+                >축하메시지 저장</Button>
             </div>
         </div>
     );

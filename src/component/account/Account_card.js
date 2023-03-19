@@ -10,7 +10,7 @@ const Account_card = ({title, bank, name, account}) => {
                 <span>{title} 계좌</span>
                 <span>
                     <Button  style={{marginBottom: '5%'}} color="accountCopy" variant="contained" size="small">
-                        <Copy text={`${bank} ${account}`}>
+                        <Copy text={`${bank} ${account.replace(/-/g, "")}`}>
                             <span style={{lineHeight: '1rem'}}>복사</span>
                         </Copy>
                     </Button>

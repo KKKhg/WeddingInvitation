@@ -55,8 +55,7 @@ const Map = () => {
     return (
         <div className="map_wrapper">
             <div>
-                <div className="map">
-                </div>
+                <div className="map" />
             </div>
             <div className="map_btn_wrapper">
                 <div>

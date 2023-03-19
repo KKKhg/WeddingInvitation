@@ -20,22 +20,22 @@ const Account = () => {
                     <AccordionDetails id="accordion1">
                         <div>
                             <Account_card 
-                                title='신랑'
-                                bank='신한'
-                                name='강현구'
-                                account='123'
-                            />
-                            <Account_card 
                                 title='신랑 아버지'
-                                bank='농협'
+                                bank='우리'
                                 name='강명석'
-                                account='123123'
+                                account='339-145707-02-002'
                             />
                             <Account_card 
                                 title='신랑 어머니'
-                                bank='국민'
+                                bank='우리'
                                 name='김순영'
-                                account='123123'
+                                account='707-02-047061'
+                            />
+                             <Account_card 
+                                title='신랑'
+                                bank='신한'
+                                name='강현구'
+                                account='110-506-958892'
                             />
                         </div>
                     </AccordionDetails>
@@ -51,12 +51,6 @@ const Account = () => {
                     <AccordionDetails id="accordion1">
                         <div>
                             <Account_card 
-                                title='신부'
-                                bank='신한'
-                                name='안유진'
-                                account='123'
-                            />
-                            <Account_card 
                                 title='신부 아버지'
                                 bank='농협'
                                 name='안성포'
@@ -67,6 +61,12 @@ const Account = () => {
                                 bank='국민'
                                 name='최은주'
                                 account='123123'
+                            />
+                            <Account_card 
+                                title='신부'
+                                bank='신한'
+                                name='안유진'
+                                account='123'
                             />
                         </div>
                     </AccordionDetails>

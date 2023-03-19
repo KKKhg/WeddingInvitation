@@ -21,6 +21,9 @@ export const theme = createTheme({
         },
         blackButton: {
             main: '#fff',
+        },
+        lightBlack: {
+            main: '#89757a'
         }
     }
 });
