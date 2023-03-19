@@ -10,10 +10,9 @@
 }
 .address_text_wrap  div {
     color: #89757a;
-} 
-.address_text_wrap > div {
     text-align: left;
 }
+ 
 .weddingHall_name {
     color: #000 !important;
 }
@@ -40,7 +39,7 @@
 
 .shuttle{
     text-decoration: underline;
-    text-decoration-color: lime;
+    text-decoration-color: #ff6a2f;
 }
 
 .copyBtn{

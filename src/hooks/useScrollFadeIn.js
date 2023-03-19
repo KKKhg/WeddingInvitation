@@ -1,8 +1,9 @@
 import { useRef, useEffect, useCallback } from 'react';
 
-const useScrollFadeIn = ({direction = 'up', duration = 2, delay = 0}) => {
+const useScrollFadeIn = (callback, direction = 'up', duration = 2, delay = 0) => {
   const element = useRef();
-
+  const callbackEnd = useRef(false);
+  
   const handleDirection = (name) => {
     switch (name) {
       case 'up':
@@ -18,10 +19,13 @@ const useScrollFadeIn = ({direction = 'up', duration = 2, delay = 0}) => {
     }
   };
 
-  const onScroll = useCallback(
-    ([entry]) => {
+  const onScroll = useCallback(([entry]) => {
       const { current } = element;
       if (entry.isIntersecting) {
+        if(callback && callbackEnd.current === false) {
+            callback();
+            callbackEnd.current = true;
+        }
         current.style.transitionProperty = 'all';
         current.style.transitionDuration = `${duration}s`;
         current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.2, 1)';

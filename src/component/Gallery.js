@@ -21,7 +21,22 @@ const _images = [
     },
     {
         original: require('../assets/images/weddingPicture/6.jpg'),
-    }
+    },
+    {
+        original: require('../assets/images/weddingPicture/7.jpg'),
+    },
+    {
+        original: require('../assets/images/weddingPicture/8.jpg'),
+    },
+    {
+        original: require('../assets/images/weddingPicture/9.jpg'),
+    },
+    {
+        original: require('../assets/images/weddingPicture/10.jpg'),
+    },
+    {
+        original: require('../assets/images/weddingPicture/11.jpg'),
+    },
 ];
 
 const Gallery = () => {
@@ -55,7 +70,6 @@ const Gallery = () => {
             <div className="f-xl">갤러리</div>
             {/* <div className="subtitle">GALLERY</div> */}
             <ImageGallery items={images}
-                    showBullets={true}
                     showFullscreenButton={false}
                     showPlayButton={false}
             />

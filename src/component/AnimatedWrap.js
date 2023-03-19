@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
-const AnimatedWrap = ({children, direction = 'up', duration = 1, delay = 0}) => {
+const AnimatedWrap = ({children, callback}) => {
     
-    const animatedItem = useScrollFadeIn(direction, duration, delay);
-
+    const animatedItem = useScrollFadeIn(callback);
+    
     return (
         <div {...animatedItem}>
             {children}
