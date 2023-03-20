@@ -15,7 +15,7 @@ const ShuttleMap = ({closeCallback, isManual}) => {
             const container = document.querySelector('.shuttleMap');
             const options = {
                 center: new window.kakao.maps.LatLng(lat, lon),
-                level: 2
+                level: 3
             }
             const map = new window.kakao.maps.Map(container, options);
             

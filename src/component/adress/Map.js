@@ -16,7 +16,7 @@ const Map = () => {
             const container = document.querySelector('.map');
             const options = {
                 center: new window.kakao.maps.LatLng(lat, lon),
-                level: 3
+                level: 4
             }
             const map = new window.kakao.maps.Map(container, options);
             
