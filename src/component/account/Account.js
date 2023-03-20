@@ -52,21 +52,21 @@ const Account = () => {
                         <div>
                             <Account_card 
                                 title='신부 아버지'
-                                bank='농협'
+                                bank='국민'
                                 name='안성포'
-                                account='123123'
+                                account='298-21-0026-540'
                             />
                             <Account_card 
                                 title='신부 어머니'
-                                bank='국민'
+                                bank='신한'
                                 name='최은주'
-                                account='123123'
+                                account='110-066-348528'
                             />
                             <Account_card 
                                 title='신부'
-                                bank='신한'
+                                bank='국민'
                                 name='안유진'
-                                account='123'
+                                account='297002-01-123063'
                             />
                         </div>
                     </AccordionDetails>

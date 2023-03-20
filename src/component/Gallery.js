@@ -41,6 +41,7 @@ const _images = [
 
 const Gallery = () => {
     const [images, setImages] = useState(_images);
+    const [index, setIndex] = useState(1);
     const [cnt, setCnt] = useState(0);
       
     useEffect(() => {
@@ -49,7 +50,7 @@ const Gallery = () => {
     }, [cnt])
 
     function setImageSize() {
-        const ratio = 1.58;
+        const ratio = 1.50;
         const wrap_width = document.querySelector('#wrapper').clientWidth;
         
         const standard_width = wrap_width;
@@ -65,6 +66,10 @@ const Gallery = () => {
         })
     }
     
+    function _setIndex(index) {
+        setIndex(index + 1);
+    }
+    
     return (
         <div className="gallery_wrapper">
             <div className="f-xl">갤러리</div>
@@ -72,7 +77,9 @@ const Gallery = () => {
             <ImageGallery items={images}
                     showFullscreenButton={false}
                     showPlayButton={false}
+                    onBeforeSlide={_setIndex}
             />
+            <div className="f-s">{index} / {images.length}</div>
         </div>
     )
 };
