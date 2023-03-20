@@ -5,6 +5,12 @@ import isMobile from "../utils/isMobile";
 
 const _images = [
     {
+        original: require('../assets/images/weddingPicture/5.jpg'),
+    },
+    {
+        original: require('../assets/images/weddingPicture/4.jpg'),
+    },
+    {
         original: require('../assets/images/weddingPicture/1.jpg'),
     },
     {
@@ -12,12 +18,6 @@ const _images = [
     },
     {
         original: require('../assets/images/weddingPicture/3.jpg'),
-    },
-    {
-        original: require('../assets/images/weddingPicture/4.jpg'),
-    },
-    {
-        original: require('../assets/images/weddingPicture/5.jpg'),
     },
     {
         original: require('../assets/images/weddingPicture/6.jpg'),
