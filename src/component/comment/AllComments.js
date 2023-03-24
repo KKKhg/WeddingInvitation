@@ -5,12 +5,22 @@ import './AllComments.css';
 import AllCommentsCard from "./AllCommentsCard";
 import CreateRoundedIcon from '@mui/icons-material/CreateRounded';
 
-const AllComments = () => {
+const AllComments = ({afterRemove, page}) => {
     const [allComments, setAllComments] = useState([]);
+    const removed = useRef(false);
 
 
     useEffect(() => {
         _getcomments();
+        // 삭제내역이 있으면 모달 종료 시 다시 불러오기.
+        return async () => {
+            if(removed.current === true) {
+                const _res = await getComments(page-1); 
+                if(_res?.result) {
+                    afterRemove(_res.data);
+                }
+            }
+        }
     }, [])
     
     async function _getcomments() {
@@ -29,6 +39,7 @@ const AllComments = () => {
         if(res?.result === true) {
             _getcomments();
             toast.info(res.msg);
+            removed.current = true;
         }
     };
     

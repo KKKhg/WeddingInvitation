@@ -104,7 +104,9 @@ const Comment = () => {
                 closeCallback={() => setAllCommentsOn(false)}
                 styles={{width: isMobile() ? '70%' : '320px' ,paddingLeft: '1%', paddingRight: '1%'}}
             >
-                <AllComments />
+                <AllComments afterRemove={setComments}
+                            page={page.current}
+                />
             </BasicPortalModal>
             
             
