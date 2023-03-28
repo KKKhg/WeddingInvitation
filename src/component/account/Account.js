@@ -15,7 +15,7 @@ const Account = () => {
                     <AccordionSummary
                         expandIcon={<ExpandMore />}
                     >
-                        <div>신랑측 계좌번호</div>
+                        <div>신랑측</div>
                     </AccordionSummary>
                     <AccordionDetails id="accordion1">
                         <div>
@@ -46,7 +46,7 @@ const Account = () => {
                     <AccordionSummary
                         expandIcon={<ExpandMore />}
                     >
-                        <div>신부측 계좌번호</div>
+                        <div>신부측</div>
                     </AccordionSummary>
                     <AccordionDetails id="accordion1">
                         <div>

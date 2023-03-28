@@ -7,7 +7,7 @@ const Account_card = ({title, bank, name, account}) => {
     return (
         <div className="account_card_wrap">
             <div className="account_card__wrap">
-                <span>{title} 계좌</span>
+                <span>{title}</span>
                 <span>
                     <Button  style={{marginBottom: '5%'}} color="accountCopy" variant="contained" size="small">
                         <Copy text={`${bank} ${account.replace(/-/g, "")}`}>
