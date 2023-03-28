@@ -18,7 +18,7 @@ const SubImg = () => {
                 <div>
                     <p className="inviteMent">
                         만개한 꽃잎들을 지나<br />
-                        푸르름이 더욱 지어오는<br />
+                        푸르름이 더욱 짙어오는<br />
                         6월 어느 날, 우리는<br />
                         더 긴 약속을 하기로 했습니다.<br />
                         <br />
