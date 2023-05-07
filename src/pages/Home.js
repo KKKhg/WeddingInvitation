@@ -15,8 +15,13 @@ import './Home.css';
 
 const Home = () => { 
     const [isImgReady, setIsImgReady] = useState(false);
+    const [template, setTemplate] = useState();
     
     useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        let template = params.get('template');
+        setTemplate(template);
+        
         const mainImg = new Image();
         mainImg.src = require('../assets/images/main_img1.webp');
         
@@ -50,9 +55,14 @@ const Home = () => {
                     <AnimatedWrap>
                         <Address />
                     </AnimatedWrap>
-                    <AnimatedWrap>
-                        <Account />
-                    </AnimatedWrap>
+                    {
+                        template == 'na' ?
+                        <></>
+                        : 
+                        <AnimatedWrap>
+                            <Account />
+                        </AnimatedWrap>   
+                    }
                     <AnimatedWrap>
                         <Comment />
                     </AnimatedWrap>
