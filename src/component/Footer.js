@@ -6,11 +6,12 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 
-const Footer = () => {
-   
+const Footer = ({template}) => {
+    let kakaoTemplateId = template == 'na' ? 93460 : 90482;
+    
     function sendKakaoLink() {
         window.Kakao.Share.sendCustom({
-            templateId: 90482,
+            templateId: kakaoTemplateId,
           });
     }
     

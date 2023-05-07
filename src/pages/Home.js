@@ -66,7 +66,7 @@ const Home = () => {
                     <AnimatedWrap>
                         <Comment />
                     </AnimatedWrap>
-                    <Footer />
+                    <Footer template={template} />
                 </>
             }
         </div> 
